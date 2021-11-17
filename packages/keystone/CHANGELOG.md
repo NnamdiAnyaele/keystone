@@ -1,5 +1,40 @@
 # @keystone-next/keystone
 
+## 29.0.0
+
+### Major Changes
+
+- [#6957](https://github.com/keystonejs/keystone/pull/6957) [`de8cf44e7`](https://github.com/keystonejs/keystone/commit/de8cf44e7b328ab98e1466d7191d9ee65a57b02a) Thanks [@bladey](https://github.com/bladey)! - Update Node engines to support current Node LTS versions, currently versions 14 and 16.
+
+### Patch Changes
+
+- [#6911](https://github.com/keystonejs/keystone/pull/6911) [`748538649`](https://github.com/keystonejs/keystone/commit/748538649645d3b0ef32b0baba8fa310f2a493fe) Thanks [@dcousens](https://github.com/dcousens)! - Explicitly declare return type on createExpressServer
+
+* [#6949](https://github.com/keystonejs/keystone/pull/6949) [`76ec35c97`](https://github.com/keystonejs/keystone/commit/76ec35c97a72dcb023e1b0da5b47e876896b6a03) Thanks [@bladey](https://github.com/bladey)! - Fixed React key error in `relationship` field with `ui.displayMode: 'cards'`
+
+- [#6955](https://github.com/keystonejs/keystone/pull/6955) [`760ae82ac`](https://github.com/keystonejs/keystone/commit/760ae82ac0fac5f73e123e2b36f7ba6320312ca6) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Fixed `ui.isAccessAllowed` not being respected in the admin meta query when no session strategy was defined
+
+* [#6932](https://github.com/keystonejs/keystone/pull/6932) [`0a7b75838`](https://github.com/keystonejs/keystone/commit/0a7b7583887e3811c23b0b74f4f97633fd484e08) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Field-level hooks and field-level create and update access control functions are now awaited in parallel. Note this means all field-level hooks and access control are now awaited in parallel because field-level read access control was already awaited in parallel.
+
+- [#6955](https://github.com/keystonejs/keystone/pull/6955) [`760ae82ac`](https://github.com/keystonejs/keystone/commit/760ae82ac0fac5f73e123e2b36f7ba6320312ca6) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - The admin meta query now bypasses `ui.isAccessAllowed` for sudo contexts.
+
+* [#6948](https://github.com/keystonejs/keystone/pull/6948) [`7a7450009`](https://github.com/keystonejs/keystone/commit/7a7450009d68f70173a2af55eb3a845ea3799c99) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - The `Set as Authenticated Item`/`Add Authenticated Item` button is now hidden if the relationship field already has the authenticated item.
+
+* Updated dependencies [[`de8cf44e7`](https://github.com/keystonejs/keystone/commit/de8cf44e7b328ab98e1466d7191d9ee65a57b02a), [`748538649`](https://github.com/keystonejs/keystone/commit/748538649645d3b0ef32b0baba8fa310f2a493fe)]:
+  - @keystone-ui/button@6.0.0
+  - @keystone-ui/core@4.0.0
+  - @keystone-ui/fields@6.0.0
+  - @keystone-ui/icons@5.0.0
+  - @keystone-ui/loading@5.0.0
+  - @keystone-ui/modals@5.0.0
+  - @keystone-ui/notice@5.0.0
+  - @keystone-ui/options@5.0.0
+  - @keystone-ui/pill@6.0.0
+  - @keystone-ui/popover@5.0.0
+  - @keystone-ui/segmented-control@6.0.0
+  - @keystone-ui/toast@5.0.0
+  - @keystone-ui/tooltip@5.0.0
+
 ## 28.0.0
 
 ### Major Changes
